@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-button-container:hover .hover{
+    display:block;
+    display: flex;
+}
+
+button:focus {
+    outline:0;
+}
+
+.game-button {
+    width:650px;
+    height:300px;
+    font-size: 100px;
+    border: 2px solid rgb(140, 59, 59);
+    color: white;
+    background-color: rgb(54, 169, 104);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.game-button:hover {
+    border: 2px solid rgb(29, 52, 39);
+    background-color: rgb(29, 52, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rule-button {
+    width:650px;
+    height:300px;
+    font-size: 100px;
+    border: 2px solid rgb(140, 59, 59);
+    color: white;
+    background-color: rgb(54, 169, 104);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.rule-button:hover {
+    border: 2px solid rgb(29, 52, 39);
+    background-color: rgb(29, 52, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.game-button-container:hover .level-button-container {
+    display: block;
+    display: flex;
+    width:650px;
+    display: flex;
+    justify-content: center;
+}
+
+.level-button-container {
+    display: none;
+}
+
+.level-button {
+    font-size: 50px;
+    border: 2px solid rgb(140, 59, 59);
+    color: white;
+    background-color: rgb(54, 169, 104);
+    border-radius: 20px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.level-button:hover {
+    border: 2px solid rgb(29, 52, 39);
+    background-color: rgb(29, 52, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+  

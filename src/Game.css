@@ -1,0 +1,47 @@
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contoller-zone {
+    width:650px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.messege-zone {
+    text-align: center;
+}
+
+.card-zone {
+    width:650px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controller-button {
+    width:300px;
+    height:100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(140, 59, 59);
+    color: white;
+    background-color: rgb(54, 169, 104);
+    border-radius: 20px;
+}
+
+.controller-button:hover {
+    border: 2px solid rgb(29, 52, 39);
+    background-color: rgb(29, 52, 39);
+    border-radius: 20px;
+    cursor: pointer;
+}
