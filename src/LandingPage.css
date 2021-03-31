@@ -84,8 +84,8 @@ button:focus {
 @media screen and (max-width: 800px) {
     .game-button {
         width:90vw;
-        height:50vh;
-        font-size: 100px;
+        height:45vh;
+        font-size: 50px;
         color: white;
         border-radius: 20px;
         margin-top: 0px;
@@ -93,8 +93,8 @@ button:focus {
     
     .rule-button {
         width:90vw;
-        height:50vh;
-        font-size: 100px;
+        height:45vh;
+        font-size: 50px;
         color: white;
         border-radius: 20px;
     }
@@ -108,7 +108,7 @@ button:focus {
     }
 
     .level-button {
-        font-size: 20px;
+        font-size: 15px;
         color: white;
         border-radius: 20px;
         height: 75px;
