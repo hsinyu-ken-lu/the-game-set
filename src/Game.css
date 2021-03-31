@@ -1,4 +1,4 @@
-.landing-page-container {
+.game-page-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,9 @@
 
 .messege-zone {
     text-align: center;
+    font-size: 20px;
+    animation: shake 0.5s;
+    animation-iteration-count:initial;
 }
 
 .card-zone {
@@ -28,20 +31,72 @@
 }
 
 .controller-button {
-    width:300px;
+    width:200px;
     height:100px;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid rgb(140, 59, 59);
+    border: 2px solid black;
     color: white;
-    background-color: rgb(54, 169, 104);
+    background-color: rgb(127, 161, 223);
     border-radius: 20px;
 }
 
 .controller-button:hover {
-    border: 2px solid rgb(29, 52, 39);
-    background-color: rgb(29, 52, 39);
+    border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
 }
+
+img {
+    max-width:60%;
+    max-height:60%;
+}
+
+@media screen and (max-width: 800px) {
+    .contoller-zone {
+        width:100vw;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .messege-zone {
+        text-align: center;
+    }
+    .card-zone {
+        width:100vw;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .controller-button {
+        height:100px;
+        display:flex;
+        flex-basis: 30%;
+        justify-content:space-around;
+        align-items: center;
+        border: 2px solid black;
+        color: white;
+        border-radius: 20px;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

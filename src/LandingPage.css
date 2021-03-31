@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(178, 204, 213);
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -19,17 +23,17 @@ button:focus {
     width:650px;
     height:300px;
     font-size: 100px;
-    border: 2px solid rgb(140, 59, 59);
+    border: 2px solid black;
     color: white;
-    background-color: rgb(54, 169, 104);
+    background-color: rgb(127, 161, 223);
     border-radius: 20px;
     margin-top: 20px;
 }
 
 .game-button:hover {
-    border: 2px solid rgb(29, 52, 39);
-    background-color: rgb(29, 52, 39);
+    border: 2px solid white;
     border-radius: 20px;
+    border-color: white;
     cursor: pointer;
 }
 
@@ -37,16 +41,14 @@ button:focus {
     width:650px;
     height:300px;
     font-size: 100px;
-    border: 2px solid rgb(140, 59, 59);
+    border: 2px solid black;
     color: white;
-    background-color: rgb(54, 169, 104);
+    background-color: rgb(127, 161, 223);
     border-radius: 20px;
-    margin: 20px;
 }
 
 .rule-button:hover {
-    border: 2px solid rgb(29, 52, 39);
-    background-color: rgb(29, 52, 39);
+    border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -65,19 +67,54 @@ button:focus {
 
 .level-button {
     font-size: 50px;
-    border: 2px solid rgb(140, 59, 59);
+    border: 2px solid black;
     color: white;
-    background-color: rgb(54, 169, 104);
+    background-color: rgb(127, 161, 223);
     border-radius: 20px;
     height: 100px;
     flex-grow: 1;
 }
 
 .level-button:hover {
-    border: 2px solid rgb(29, 52, 39);
-    background-color: rgb(29, 52, 39);
+    border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .game-button {
+        width:90vw;
+        height:50vh;
+        font-size: 100px;
+        color: white;
+        border-radius: 20px;
+        margin-top: 0px;
+    }
+    
+    .rule-button {
+        width:90vw;
+        height:50vh;
+        font-size: 100px;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .game-button-container:hover .level-button-container {
+        display: block;
+        display: flex;
+        width:90vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .level-button {
+        font-size: 20px;
+        color: white;
+        border-radius: 20px;
+        height: 75px;
+        flex-grow: 1;
+    }
+    
 }
 
   

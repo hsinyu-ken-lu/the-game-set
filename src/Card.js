@@ -52,7 +52,7 @@ function Card(props) {
     }
 
     const cardOnClick = (data_key) => {
-        dispatch({type:"CARDCLICK", data_key:data_key});
+        dispatch({type:"CardClick", data_key:data_key});
     }
 
     const getClassName = () => {
