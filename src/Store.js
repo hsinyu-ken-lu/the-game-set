@@ -47,7 +47,7 @@ const StateProvider = ( { children } ) => {
 
             case 'Reset':
                 let new_deck = state.deck;
-                let new_current_deck = [];
+                let new_current_deck;
                 while(hasSet === false){
                     // shuffle_card
                     for (let i = new_deck.length - 1; i > 0; i--) {  
@@ -57,6 +57,7 @@ const StateProvider = ( { children } ) => {
                         new_deck[j] = temp; 
                     }
 
+                    new_current_deck = []
                     // create_new_current_deck();
                     for(let i = 0; i < state.initialIndex; i++){
                         new_current_deck.push(new_deck[i]);
@@ -74,6 +75,7 @@ const StateProvider = ( { children } ) => {
                                     let thirCard = new_current_deck[k];
                                     if(checkSet(firCard, secCard, thirCard)){
                                         hasSet = true
+                                        console.log("has a set")
                                     }
                                 }
                             }
